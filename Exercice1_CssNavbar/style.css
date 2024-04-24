@@ -1,0 +1,108 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #C7CCE0;
+}
+header{
+    background-color: #673bb7;
+    padding: 30px 90px;
+    box-shadow:0 0 2em #736698;  /* deux ombres dans la liste et des rayons de flou pour chacune */
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+h1{
+    color: white;
+}
+
+nav a{
+    padding-left: 15px;
+    text-decoration: none;
+    color: white;
+}
+.card_header{
+    
+    margin-top:20px ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #673bb7;
+    width: 350px;
+    box-shadow:0 0 2em #736698;  /* deux ombres dans la liste et des rayons de flou pour chacune */
+    border-bottom: 1px solid white;
+
+}
+
+.card_header h1{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.icone i {
+ 
+    margin-right: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    font-size: 25px;
+    background-color: white;
+  
+}
+.card_body{
+    
+    box-shadow:0 0 2em #736698;  /* deux ombres dans la liste et des rayons de flou pour chacune */
+    background-color: #673bb7;
+    width: 350px;
+
+}
+
+.card_body a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    
+    
+}
+main{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 250px;
+}
+section {
+    display: flex;
+    flex-direction: row;
+    color:#BC3666 ;
+    justify-content: space-between;
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+ .css{
+    display: flex;
+    margin:10px ;
+    width: 700px;
+    color: #673bb7;  
+}
+.responsive{
+    display: flex;
+    margin:10px ;
+}
+.texte{
+    margin:20px ;
+}
