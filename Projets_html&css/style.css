@@ -1,26 +1,685 @@
-*{
-    font-family: 'Roboto',sans-serif;
-    
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-li, i,a  {
-    color: white;
+body {
+  background-color: #e9eaf0;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  background-color: white;
+  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.nav_links {
+
+
+  margin-right: 450px;
+
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.nav_links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav_links ul li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+}
+
+.action .icon {
+  margin-right: 20px;
+}
+
+.action .icon i {
+  color: black;
+  margin-right: 20px;
+  font-size: 25px;
+}
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+}
+
+.left-column, .right-column {
+  flex-basis: 50%;
+}
+.left-column{
+  /* border: #13835d 5px solid; */
+
+  padding-top: 100px;
+}
+
+.border_image {
+  padding: 20px;
+}
+
+.image-collage img {
+
+  /* border: #13835d   5px solid; */
+  width: 100%;
+}
+
+.image-collage img {
+  max-width: 100%;
+}
+
+
+.section1 h1 {
+  font-size: 70px;
+  margin-right: 50%;
+ 
+  
+}
+
+.section1 h3 {
+  margin-right: 50%;
+  padding: 5px;
+  color: #13835d;
+}
+.section1 p {
+  /* margin-left: 110px; */
+  margin-right: 90%;
+  padding: -5px;
+  width: 100%;
+
+ text-align: start;
+  /* border: #13835d 5px solid; */
+}
+
+.section1 button {
+  margin-top: 15px;
+ margin-right: 90%;
+ width: 145px;
+}
+
+
+button {
+  background-color: #13835d;
+  color: #fff;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-button {
+  transform: skewX(45deg);
+  overflow: hidden;
+}
+
+.image-button img {
+  border-radius: 145px 145px 145px 145px;
+  transform: skewX(45deg);
+  height: 145px;
+}
+
+footer .pied_page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  background-image: url('./images/verdure.png');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+p {
+  width: 350px;
+}
+
+h3 {
+  padding-bottom: 25px;
+}
+
+.heures ul li {
+  list-style-type: none;
+}
+
+.copyright {
+  justify-content: center;
+  background-color: white;
+  color: black;
+  height: 45px;
+}
+
+.copyright p {
+  align-items: center;
+  margin-left: 495px;
+  padding: 15px;
+
+}
+
+.a-propos {
+  display: flex;
+/* border: #13835d 1px solid; */
+ /* margin-bottom: 100px; */
+  justify-content: center;
+  align-items: center;
+}
+.a-propos .card_body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* aside  { */
+  /* display: flex; */
+ /*  */
+  /* margin-left: 55px; */
+  /* gap: 20px; Ajustez cette valeur pour contrôler la distance de séparation */
+/* } */
+
+.a-propos .list_column img {
+  width: 150px;
+  height: auto; /* Gardez la proportion de l'image */
+}
+.section2 {
+ width: 50%;
+ margin-right: 50px;
+ background-color: white;
+ height: 400px;
+ border-radius: 5px 5px 5px 5px;
+}
+.card_body {
+  justify-content: center;
+  background-color: white;
+  margin-left: 250px;
+  width: 40%;
+  height: 400px;
+  flex-direction: row;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.list_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.title_propos {
+  text-decoration: underline;
+  color: #ddb887;
+  margin-right: 90px;
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+  width: 545px;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+.texts {
+  width: 680px;
+  /* padding: 450px; */
+  margin-top: 15px;
+  margin-left: 150px;
+}
+.image .img_product{
+  /* width: 150px; */
+  background-color: green;
+  border: red 5px solid;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ padding: 155px;
+ padding-right: 355px;
+  box-shadow: 5px 5px 20px black;
+  align-content: center;
+}
+
+.a-propos,
+.section2 {
+  flex: 1;
+
+}
+
+ .image {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 25px;
+
+}
+
+.image img {
+  border: #e9eaf0 10px solid;
+  margin: 0px;
+
+  border-radius: 0 60px 0 60px;
+}
+
+/* .produits { */
+  /* margin-left: 65px; */
+/* } */
+
+.produit {
+  width: 19%;
+  display: inline-block;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5px;
+  background-color: #bdbec2;
+  margin: 20px;
+}
+.title_product {
+
     text-decoration: none;
+
+  font-size: 25px;
+  /* margin: 0; */
+  padding: 0;
+  margin-left: 500px;
+  margin-top: 15px;
+  align-items: center;
+}
+ h2{
+
+    /* text-decoration: none; */
+  color: #13835d;
+  padding: 	65px;
+  /* border: red 5px solid; */
+
+
+  /* font-size: 25px; */
+  /* margin: 0; */
+  /* padding: 0; */
+  /* margin-left: 550px; */
+  /* margin-top: 15px; */
+  align-items: center;
+}
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Pour centrer les éléments horizontalement */
+  margin: 100px;
+  margin-top: 25px;
 }
 
-header {
+.card {
+  position: relative;
+  /* border: 1px solid #ccc; */ /* Supprime la bordure */
+  border-radius: 15px;
+
+  padding: 20px;
+  margin: 10px;
+  width: calc(25% - 20px); /* Pour avoir au maximum 4 produits par ligne */
+  height: 500px; /* Ajuste la hauteur selon votre préférence */
+  background-color: #f2f2f2; /* Définit la couleur de fond */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre */
+}
+
+
+
+.product-image {
+  width: 100%;
+  margin-top: -50px;
+  margin-bottom: 25px;
+  /* border: red 5px solid;        */
+  /* padding-bottom:-55px ; */
+  height: 246px; /* Ajustez la hauteur de l'image selon votre préférence */
+  object-fit: cover; /* Pour conserver le ratio de l'image */
+}
+
+.rating {
+  color: #13835d;
+  margin-bottom: 20px;
+}
+
+.star {
+  font-size: 20px;
+}
+
+.card button {
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Ajustez la largeur du bouton selon votre préférence */
+  background-color: #13835d;
+  margin-left: -20px;
+  height: 55px;
+  color: white;
+  padding: 10px 0; /* Ajustez le rembourrage selon votre préférence */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+h4{
+  margin-bottom: 10px;
+}
+.description{
+  margin-bottom: 10px;
+  text-align: center; /* Pour centrer le texte horizontalement */
+  color: #c6c7cc;
+  padding-right: 145px;
+}
+.price{
+  margin-bottom: 10px;
+  text-align: center; /* Pour centrer le texte horizontalement */
+  color: black;
+  padding-right: 145px;
+}
+.products {
+  box-shadow:  0 -10px 10px -10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre au bas */
+  height: 100%; /* Réduire la hauteur de la classe .products selon votre préférence */
+  }
+
+  .testimonial-section {
+    position: relative;
+    background-color: #f5f5f5; /* Couleur de secours */
+    background-image: url('./images/esteval_temoignage.png');/* Remplacez par l'URL de votre image */
+    background-size: cover;
+    height: 	100%;
+    padding: 50px 0;
+  }
+  
+ 
+  
+  .content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+ .content  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    padding-left: 200px;
+    padding-bottom: 45px;
+    white-space: nowrap; /* Empêche le texte de se retourner à la ligne */
+   
+   
+  }
+  
+  .testimonial-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #673bb7;
-    padding: 30px 90px;
-    box-shadow: 0 0 2em #736698;
+  }
+  
+  .testimonial-cards .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    align-items: center;
+    /* padding: 20px; */
+    margin: 0 10px;
+    max-width: 300px;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+.card p {
+  white-space: wrap; /* Empêche le texte de se retourner à la ligne */
+color: black;
+/* border: #13835d 5px solid; */
+width: 100%;
+padding: 0;
+text-align: center; /* Centre le texte horizontalement */
+
+}
+.testimonial-cards .card img {
+  width: 100px; /* Ajustez la taille de l'image selon votre préférence */
+  height: 100px; /* Ajustez la taille de l'image selon votre préférence */
+  border-radius: 50%; /* Crée une forme de cercle */
+  object-fit: cover; /* Pour conserver le ratio de l'image */
+  margin-bottom: 20px; /* Ajustez selon votre mise en page */
+}
+
+  .image-section {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  margin:  10px; /* Ajustez la marge entre les éléments selon votre préférence */
+}
+.left {
+  align-self: flex-start; /* Aligner à gauche */
+  /* border: #13835d 5px solid; */
+  margin-right: 199px;
+}
+.left p{
+ flex-wrap: wrap;
+ width: 100%;
+}
+
+/* .right { */
+/*  */
+  /* align-self: flex-end; Aligner à droite */
+  /* display: flex; */
+  /* flex-wrap: wrap; Permettre le retour à la ligne */
+  /* justify-content: space-between; Espacement entre les colonnes */
+  /* width: 240px; Largeur des colonnes */
+/* } */
+
+.image_wadji {
+ 
+  display: flex;
+  justify-content: space-between;
+
+
+
+  object-fit: cover; /* Pour conserver le ratio de l'image */
+}
+.right {
+  align-self: flex-start; /* Aligner à gauche */
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 5fr); Deux colonnes */
+  /* grid-auto-rows: minmax(150px, auto); Deux lignes */
+  /* gap: 5px; Espacement entre les éléments */
+  width:100%; /* Largeur de la grille */ 
+
+   /* border: #13835d 5px solid; */
+   margin-top: 15px;
+   margin-right: 15px;
+}
+
+.image_bouteille {
+
+  display: flex;
+  justify-content: space-between;
+ 
+  margin-top: 25px;
+  object-fit: cover; /* Pour conserver le ratio de l'image */
+ 
+}
+
+.top-left
+ {
+  width: 520px; /* Même largeur que la classe left */
+}
+
+.newsletter-section {
+  background-image: url('./images/newsletter.png'); /* Ajoutez l'URL de votre image de fond */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Couleur du texte */
+  padding: 100px 0; /* Ajustez l'espacement intérieur selon votre préférence */
+  text-align: center;
+}
+
+.newsletter-content {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 
+.newsletter-form input[type="email"],
+.newsletter-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  display: block; /* Afficher les éléments sur des lignes distinctes */
+  margin: 20px auto; /* Marge centrale */
+}
+
+.newsletter-form input[type="email"] {
+  width: 70%;
+}
+
+.newsletter-form button {
+  background-color: #13835d; /* Couleur du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  cursor: pointer;
+}
 
 
+.newsletter-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
 
 
+.newsletter-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
 
+.services-section {
+  text-align: center;
+  padding: 50px 0;
+}
 
+.service-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-service {
+  /* border: 1px solid #ccc; */
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 0 10px;
+  max-width: 300px;
+}
+
+.card-service h4  {
+  color: #13835d;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card-service i  {
+  color: #13835d;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+/* .image-collage img:nth-child(1) { */
+  /* transform: skewX(70deg); */
+  /* border-radius: 545em 456em; */
+  /* width:445px; */
+  /* border: #13835d 10px solid; */
+/* } */
+
+.image-collage img:nth-child(2) {
+  transform: skewX(-40deg);
+  border-radius: 50%; 
+  height: 156px;
+  border: #13835d 10px solid;
+}
+
+.card-service p {
+ 
+  width: 100%;
+  font-size: 16px;
+}
+.contact-section {
+  background-image: url('images/recolte_contact.png'); /* Ajoutez l'URL de votre image de fond */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Couleur du texte */
+  padding: 100px 0; /* Ajustez l'espacement intérieur selon votre préférence */
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  background-color: #4CAF50; /* Couleur du bouton */
+  color: #fff; /* Couleur du texte du bouton */
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45a049; /* Couleur de survol du bouton */
+}

@@ -1,44 +1,344 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Produits local</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Produits local</title>
 </head>
+
 <body>
-    <header>
-       
-            <h1>Logo</h1>
-            <nav>
-         
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="index.html">Produits</a></li>
-                    <li><a href="index.html">Services</a></li>
-                    <li><a href="index.html">Contact</a></li>
-                </ul>
-            </nav>
-                
-                <div class="action">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <a ><button>S'abonner</button></a>
+  <header class="header">
+    <div class="logo">
+    <img src="images/logo.png" alt="logo" width="95px">
+    </div>
 
-                </div>
-               
-              
-      
+    <nav class="nav_links">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html">Produits</a></li>
+        <li><a href="index.html">Services</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </nav>
 
-    </header>
-    <main></main>
-    <footer></footer>
+    <div class="action">
+      <div class="icon">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      </div>
+      <a><button>S'abonner</button></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section1">
+      <div class="left-column">
+        <div class="border_image">
+          <h3>Transformation de produits locaux</h3>
+          <h1>Transformation <br> agroalimentaire</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis odio nostrum quae aut adipisci quaerat exercitationem dignissimos quo error, nulla non dolorum magnam, quia corrupti unde, assumenda repellendus architecto placeat.
+          Harum cumque et architecto soluta neque dignissimos fuga saepe similique maxime, earum eos ab inventore molestias doloribus quae! Explicabo hic dignissimos officiis atque nostrum illum deserunt magni facilis ea eum?</p>
+          <a href="#"><button>Voir plus...</button></a>
+        </div>
+      </div>
+      <div class="right-column">
+        <section class="image-collage">
+          <!-- <img src="images/agro2.png" alt=" 1 description"> -->
+          <img src="images/header.png" alt=" 2 description" width="450px">
+        </section>
+      </div>
+    </section>
     
+    <div class="container1">
+      <section class="a-propos">
+        <aside>
+          <div class="card_body">
+            <div class="list_column">
+              <img src="./images/hibiscus.png" alt="bissap" style="margin-right: 15px;">
+              <img src="./images/bouye.png" alt="bouye" style="margin-right: 25px;">
+            </div>
+          </div>
+        </aside>
+        <section class="section2">
+          <div class="texte">
+            <h1 class="title_propos">Transformation agroalimentaire</h1>
+            <p class="texts">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Nemo quidem maiores mollitia error nam, deserunt a, voluptas tempora fugiat accusantium nesciunt quod   deleniti, vitae non.  deleniti, vitae non.
+              deleniti, vitae non.
+            </p>
+            <div class="image" >
+              <img class='image_product'src="./images/agricultrice2.png" alt="agro" width="150px" height="150px" >
+              <img class='image_product'src="./images/agro.png" alt="agro" width="150px" height="150px" >
+              <img class='imaget'src="./images/agro3.png" alt="agro" width="150px" height="150px">
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+    <section class="products">
+      <div class="title_product">
+        <h2>Les Produits</h2>
+      </div>
+      <div class="product-list">
+        <div class="card">
+          <img class="product-image" src="images/sankhal.png" alt="sankhal">
+          <h4>Sankhal</h4>
+          <p class="description">Produits 100% Naturels</p>
+          <p class="price">2.500 FCFA</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button>Ajouter</button>
+        </div>
+        <div class="card">
+          <img class="product-image" src="images/arraw.png" alt="arraw">
+           <h4>Arraw</h4>
+         <p class="description">Produits 100% Naturels</p>
+          <p class="price">2.500 FCFA</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button>Ajouter</button>
+        </div>
+        <div class="card">
+          <img class="product-image" src="images/thiakry.png" alt="thiakry">
+           
+          <h4>Thiakry</h4>
+         <p class="description">Produits 100% Naturels</p>
+          <p class="price">2.500 FCFA</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button>Ajouter</button>
+        </div>
+        <div class="card">
+          <img class="product-image" src="images/soungouf.png" alt="soungouf">
+           <h4>Soungouf</h4>
+         <p class="description">Produits 100% Naturels</p>
+          <p class="price">2.500 FCFA</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button>Ajouter</button>
+        </div>
+        <div class="card">
+          <img class="product-image" src="images/bouye.png" alt="Nom du Produit">
+           <h4>Bouye</h4>
+         <p class="description">Produits 100% Naturels</p>
+          <p class="price">3.500 FCFA</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button>Ajouter</button>
+        </div>
+        <div class="card">
+          <img class="product-image"src="images/gingimbre.png" alt="gingimbre">
+           <h4>Gimgimbre</h4>
+         <p class="description">Produits 100% Naturels</p>
+          <p class="price">3.500 FCFA</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button>Ajouter</button>
+        </div>
+        <div class="card">
+          <img class="product-image" src="images/bissap.png" alt="bissap">
+           <h4>Bissap</h4> 
+         <p class="description">Produits 100% Naturels</p>
+          <p class="price">3.500 FCFA</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button>Ajouter</button>
+        </div>
+        <div class="card">
+          <img class="product-image" src="images/bouye.png" alt="Nom du Produt">
+           <h4>Bouye</h4>
+         <p class="description">Produits 100% Naturels</p>
+          <p class="price">3.500 FCFA</p>
+          <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9734;</span>
+          </div>
+          <button>Ajouter</button>
+        </div>
+        <!-- Répétez cette structure pour chaque produit -->
+      </div>
+      
+    </section>
+    <section class="testimonial-section">
+      <!-- <div class="temoignage_img"><img src="images/testimonial.png" alt=""></div> -->
+      <div class="content">
+        img
+        <h2>Témoignages</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet gravida dolor, et posuere nisi.</p>
+        <div class="testimonial-cards">
+          <div class="card">
+<img src="images/homme_noir.jpg" alt="">
+            <h3>Abdou khadim</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet gravida dolor.Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet gravida dolo</p>
+          </div>
+          <div class="card">
+<img src="images/homme_noir.jpg" alt="">
+            <h3>Abdou khadim</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet gravida dolor.Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet gravida dolo</p>
+          </div>
+          <div class="card">
+            <img src="images/homme_noir.jpg" alt="">
+            <h3>Abdou khadim</h3>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet gravida dolor.Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet gravida dolo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="image-section">
+      <div class="image-container left">
+        <img src="images/wadji.png" alt="" class="image_wadji">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sequi consectetur odit nulla non inventore tempora repellendus modi officia reiciendis veniam eligendi eaque, adipisci quibusdam impedit illum facilis! Nobis, temporibus!
+       
+        </p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sequi consectetur odit nulla non inventore tempora repellendus modi officia reiciendis veniam eligendi eaque, adipisci quibusdam impedit illum facilis! Nobis, temporibus!
+       
+        </p>
+      </div>
+      <div class="right">
+       
+          <img src="images/test.png" alt="" class="image_bouteille top-left" width="850px">
+         
+       
+      </div>
+    </section>
+    <section class="newsletter-section">
+      <div class="newsletter-content">
+      
+        <form action="#" method="post" class="newsletter-form">
+          <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+          <button type="submit">S'abonner</button>
+        </form>
+      </div>
+    </section>
+    <section class="services-section">
+      <h2>Mes Services</h2>
+      <div class="service-cards">
+        <div class="card-service">
+          <i class="fas fa-pizza-slice"></i>
+          <h4>Nectar et Sirop de ditakh</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In non suscipit soluta eveniet. Molestias dolorem voluptatum voluptate, odio ipsam porro, voluptates unde vitae consequatur harum magnam labore eum fuga quo.
+         </p>
+        </div>
+        <div class="card-service">
+          <i class="fas fa-hamburger"></i>
+          <h4>Nectar et Sirop de ditakh</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In non suscipit soluta eveniet. Molestias dolorem voluptatum voluptate, odio ipsam porro, voluptates unde vitae consequatur harum magnam labore eum fuga quo.
+          </p>
+        </div>
+        <div class="card-service">
+          <i class="fas fa-glass-whiskey"></i>
+          <h4>Nectar et Sirop de ditakh</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In non suscipit soluta eveniet. Molestias dolorem voluptatum voluptate, odio ipsam porro, voluptates unde vitae consequatur harum magnam labore eum fuga quo.
+         </p>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="contact-content">
+        <h2>Contactez-nous</h2>
+        <form action="#" method="post" class="contact-form">
+          <input type="text" name="name" placeholder="Votre nom" required>
+          <input type="email" name="email" placeholder="Votre adresse e-mail" required>
+          <textarea name="message" placeholder="Votre message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+    
+    
+    
+    
+    
+    
+  
+
+  </main>
+  <footer>
+    <div class="pied_page">
+      <div class="objectif">
+        <h3>Ojectifs</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+          quisquam. Sequi explicabo officiis adipisci corrupti repudiandae culpa
+          commodi, consectetur quos minima consequatur velit illum hic, illo
+          doloribus repellendus nulla exercitationem. Voluptatum repudiandae
+          nulla, iste alias nisi eum commodi qui odit cum vel? Accusamus cumque
+          sequi dolorum architecto ipsam non ratione eveniet minima, eum totam
+          corporis unde debitis quibusdam atque dolorem.
+        </p>
+      </div>
+      <div class="heures">
+        <h3>Heures</h3>
+        <ul>
+          <li>Lundi: 9h-18h</li>
+          <li>Lundi: 9h-18h</li>
+          <li>Lundi: 9h-18h</li>
+        </ul>
+
+      </div>
+      <div class="contact">
+        <h3>Me contacter</h3>
+        <p>77 889 56 78</p>
+        <p>test@gmail.com</p>
+        <p>Dakar-Senegal</p>
+      </div>
+
+    </div>
+    <div class="copyright">
+      <p>copyright 2024 | Tout droits reserve</p>
+    </div>
+
+  </footer>
 </body>
+
 </html>
