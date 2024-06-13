@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application de Gestion des Dépenses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo"><img src="logo.png" alt="Logo"></div>
+        <div class="card" id="budget-card">
+            <h3 class="header">Budget</h3>
+            <p id="budget" class="value">0 FCFA</p>
+        </div>
+        <div class="card" id="expense-card">
+            <h3 class="header">Dépenses</h3>
+            <p class="value" id="expense">0 FCFA</p>
+        </div>
+        <div class="card" id="balance-card">
+            <h3 class="header">Solde</h3>
+            <p class="value" id="balance">0 FCFA</p>
+        </div>
+        <h4 class="nom_table">Liste des dépenses</h4>
+        <table id="depenses-table">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Montant</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="depenses-list">
+                <tr>
+                    <td>Nourriture</td>
+                    <td class="amount">40,000 FCFA</td>
+                    <td class="actions"><button class="delete-green">supprimer</button></td>
+                </tr>
+                <tr>
+                    <td>Loisir</td>
+                    <td class="amount">32,000 FCFA</td>
+                    <td class="actions"><button class="delete-green">supprimer</button></td>
+                </tr>
+                <tr>
+                    <td>Transport</td>
+                    <td class="amount">87,000 FCFA</td>
+                    <td class="actions"><button class="delete-red">supprimer</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 class="nom_table">Liste des revenus</h4>
+        <table id="revenue-table">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Montant</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="revenue-list">
+                <tr>
+                    <td>Transport</td>
+                    <td class="amount">87,000 FCFA</td>
+                    <td class="actions"><button class="delete-red">supprimer</button></td>
+                </tr>
+                <tr>
+                    <td>Transport</td>
+                    <td class="amount">87,000 FCFA</td>
+                    <td class="actions"><button class="delete-red">supprimer</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
