@@ -1,7 +1,9 @@
 /* style.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #ffffff;
     margin: 0px;
     padding: 0;
@@ -103,3 +105,11 @@ td.actions {
 }
 
 
+td  a{
+    text-decoration: none;
+    color: #D1C000;
+    padding: 5px;
+    font-weight: bold;
+    font-size:42;
+
+}

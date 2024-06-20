@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application de Gestion des Dépenses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
         </div>
         <div class="card" id="balance-card">
             <h3 class="header">Solde</h3>
-            <p class="value" id="balance">0 FCFA</p>
+            <p class="value" id="benefits">0 FCFA</p>
         </div>
         <h4 class="nom_table">Liste des dépenses</h4>
         <table id="depenses-table">
@@ -46,7 +47,17 @@
                     <td class="amount">87,000 FCFA</td>
                     <td class="actions"><button class="delete-red">supprimer</button></td>
                 </tr>
+             
+              
             </tbody>
+            <tfoot>
+        <tr>
+            <td colspan="3"><i class="fa fa-plus-circle" aria-hidden="true" style="color:#D1C000 ;"></i>
+                <a href="component/depenses/depense.html">Ajouter Depenses</a> </td>
+           
+        </tr>
+    </tfoot>
+        
         </table>
         <h4 class="nom_table">Liste des revenus</h4>
         <table id="revenue-table">
@@ -69,8 +80,19 @@
                     <td class="actions"><button class="delete-red">supprimer</button></td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><i class="fa fa-plus-circle" aria-hidden="true" style="color:#D1C000 ;"></i>
+                        <a href="component/revenues/revenues.html">Ajouter Revenues</a> </td>
+                   
+                </tr>
+            </tfoot>
         </table>
     </div>
+   
+   
+    
+
     <script src="script.js"></script>
 </body>
 </html>

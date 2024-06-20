@@ -1,49 +1,46 @@
-// // script.js
+// index.html
+document.addEventListener('DOMContentLoaded', function() {
+    // Vérifier s'il y a de nouvelles dépenses ajoutées depuis depenses.html
+    const nouvelleDepenseTitre = localStorage.getItem('nouvelleDepenseTitre');
+    const nouvelleDepenseMontant = localStorage.getItem('nouvelleDepenseMontant');
 
-// let budget = 0;
-// let totalIncome = 0;
-// let totalExpenses = 0;
+    if (nouvelleDepenseTitre && nouvelleDepenseMontant) {
+        // Créer une nouvelle ligne de tableau pour la nouvelle dépense
+        const newRow = document.createElement('tr');
+        newRow.innerHTML = `
+            <td>${nouvelleDepenseTitre}</td>
+            <td class="amount">${nouvelleDepenseMontant} FCFA</td>
+            <td class="actions"><button class="delete-green">supprimer</button></td>
+        `;
+        
+        // Ajouter la nouvelle ligne à la liste des dépenses
+        const depensesList = document.querySelector('#depenses-table tbody');
+        depensesList.appendChild(newRow);
 
-// // Fonction pour mettre à jour les cartes
-// function updateCards() {
-//     const balance = budget + totalIncome - totalExpenses;
-//     document.getElementById('balance').textContent = balance.toFixed(2) + ' CFA';
-//     document.getElementById('expense').textContent = totalExpenses.toFixed(2) + ' CFA';
-//     document.getElementById('budget').textContent = budget.toFixed(2) + ' CFA';
-// }
+        // Effacer les données du stockage local après utilisation
+        localStorage.removeItem('nouvelleDepenseTitre');
+        localStorage.removeItem('nouvelleDepenseMontant');
+    }
 
-// // Fonction pour mettre à jour les dépenses totales
-// function updateTotalExpenses() {
-//     totalExpenses = 0;
-//     document.querySelectorAll('#expenses-list tr').forEach(row => {
-//         totalExpenses += parseFloat(row.cells[1].textContent);
-//     });
-//     document.getElementById('total-amount').innerText = totalExpenses.toFixed(2) + ' CFA';
-//     updateCards();
-// }
+    // Vérifier s'il y a de nouveaux revenus ajoutés depuis revenues.html
+    const nouveauRevenuTitre = localStorage.getItem('nouveauRevenuTitre');
+    const nouveauRevenuMontant = localStorage.getItem('nouveauRevenuMontant');
 
-// // Fonction pour mettre à jour les revenus totaux
-// function updateTotalIncome() {
-//     totalIncome = 0;
-//     document.querySelectorAll('#income-list tr').forEach(row => {
-//         totalIncome += parseFloat(row.cells[1].textContent);
-//     });
-//     updateCards();
-// }
+    if (nouveauRevenuTitre && nouveauRevenuMontant) {
+        // Créer une nouvelle ligne de tableau pour le nouveau revenu
+        const newRow = document.createElement('tr');
+        newRow.innerHTML = `
+            <td>${nouveauRevenuTitre}</td>
+            <td class="amount">${nouveauRevenuMontant} FCFA</td>
+            <td class="actions"><button class="delete-red">supprimer</button></td>
+        `;
+        
+        // Ajouter la nouvelle ligne à la liste des revenus
+        const revenueList = document.querySelector('#revenue-table tbody');
+        revenueList.appendChild(newRow);
 
-// // Supprimer une dépense
-// function removeExpense(button) {
-//     const row = button.closest('tr');
-//     row.remove();
-//     updateTotalExpenses();
-// }
-
-// // Supprimer un revenu
-// function removeIncome(button) {
-//     const row = button.closest('tr');
-//     row.remove();
-//     updateTotalIncome();
-// }
-
-// // Appel initial pour mettre à jour les cartes
-// updateCards();
+        // Effacer les données du stockage local après utilisation
+        localStorage.removeItem('nouveauRevenuTitre');
+        localStorage.removeItem('nouveauRevenuMontant');
+    }
+});
