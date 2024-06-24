@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajouter Dépenses</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    /* Styles pour le conteneur principal */
+    .container {
+      display: flex; /* Utilise un modèle d'affichage flexbox */
+      justify-content: center; /* Centre les éléments horizontalement */
+      align-items: center; /* Centre les éléments verticalement */
+      flex-direction: column; /* Dispose les éléments en colonne */
+      height: 100vh; /* Hauteur égale à 100% de la hauteur de la fenêtre */
+    }
+
+    /* Styles pour le formulaire */
+    #depense-form {
+      display: flex; /* Utilise un modèle d'affichage flexbox */
+      flex-direction: column; /* Dispose les éléments en colonne */
+      gap: 10px; /* Ajoute un espacement de 10px entre les éléments enfants */
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            style="margin-bottom: 100px;"
+            src="logo.png"
+            alt="Logo"
+            title="retour a la page d'acceuil"
+        /></a>
+      </div>
+      <h2 style="font-size: small; color: #0c5e69;">Ajouter une dépense</h2>
+      <form id="depense-form">
+        <label for="depense-title">Titre de la dépense :</label>
+        <input type="text" id="depense-title" placeholder="Titre" required />
+        <label for="depense-amount">Montant de la dépense :</label>
+        <input
+          type="number"
+          id="depense-amount"
+          placeholder="Montant en FCFA"
+          required
+        />
+        <button type="submit" style="background-color: #0c5e69; width: 110%;">
+          Ajouter Dépense
+        </button>
+      </form>
+    </div>
+    <script>
+      // Ajoute un gestionnaire d'événement pour le formulaire avec l'ID 'depense-form' qui sera déclenché lors de la soumission du formulaire
+      document
+        .getElementById("depense-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Empêche le comportement par défaut de soumission du formulaire (rechargement de la page)
+
+          // Récupère la valeur du champ 'depense-title' et la stocke dans la variable 'title'
+          const title = document.getElementById("depense-title").value;
+
+          // Récupère la valeur du champ 'depense-amount', la convertit en nombre et la stocke dans la variable 'amount'
+          const amount = parseFloat(
+            document.getElementById("depense-amount").value
+          );
+
+          // Vérifie si 'title' est non vide, 'amount' est un nombre valide et 'amount' est supérieur ou égal à 0
+          if (title && !isNaN(amount) && amount >= 0) {
+            // Récupère les transactions depuis le localStorage ou initialise avec des tableaux vides si aucun n'est trouvé
+            let transactions = JSON.parse(
+              localStorage.getItem("transactions")
+            ) || { depenses: [], revenues: [] };
+
+            // Ajoute une nouvelle dépense à l'objet 'transactions.depenses' avec un ID unique (Date.now()), 'title' et 'amount'
+            transactions.depenses.push({ id: Date.now(), title, amount });
+
+            // Stocke l'objet 'transactions' mis à jour dans le localStorage sous forme de chaîne JSON
+            localStorage.setItem("transactions", JSON.stringify(transactions));
+
+            // Redirige l'utilisateur vers 'index.html' après avoir ajouté la dépense avec succès
+            window.location.href = "index.html";
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -10,6 +10,11 @@
 <body>
     <div class="container">
         <div class="logo"><img src="logo.png" alt="Logo"></div>
+        <form id="budget-form">
+            <label for="initial-budget">Entrez le budget initial :</label>
+            <input type="number" id="initial-budget" placeholder="Montant en FCFA" required>
+            <button type="submit">Définir le budget</button>
+        </form>
         <div class="card" id="budget-card">
             <h3 class="header">Budget</h3>
             <p id="budget" class="value">0 FCFA</p>
@@ -31,33 +36,14 @@
                     <th>Actions</th>
                 </tr>
             </thead>
-            <tbody id="depenses-list">
-                <tr>
-                    <td>Nourriture</td>
-                    <td class="amount">40,000 FCFA</td>
-                    <td class="actions"><button class="delete-green">supprimer</button></td>
-                </tr>
-                <tr>
-                    <td>Loisir</td>
-                    <td class="amount">32,000 FCFA</td>
-                    <td class="actions"><button class="delete-green">supprimer</button></td>
-                </tr>
-                <tr>
-                    <td>Transport</td>
-                    <td class="amount">87,000 FCFA</td>
-                    <td class="actions"><button class="delete-red">supprimer</button></td>
-                </tr>
-             
-              
-            </tbody>
+            <tbody id="depenses-list"></tbody>
             <tfoot>
-        <tr>
-            <td colspan="3"><i class="fa fa-plus-circle" aria-hidden="true" style="color:#D1C000 ;"></i>
-                <a href="component/depenses/depense.html">Ajouter Depenses</a> </td>
-           
-        </tr>
-    </tfoot>
-        
+                <tr>
+                    <td colspan="3"><i class="fa fa-plus-circle" aria-hidden="true" style="color:#D1C000;"></i>
+                        <a href="depense.html">Ajouter Dépenses</a>
+                    </td>
+                </tr>
+            </tfoot>
         </table>
         <h4 class="nom_table">Liste des revenus</h4>
         <table id="revenue-table">
@@ -68,31 +54,16 @@
                     <th>Actions</th>
                 </tr>
             </thead>
-            <tbody id="revenue-list">
-                <tr>
-                    <td>Transport</td>
-                    <td class="amount">87,000 FCFA</td>
-                    <td class="actions"><button class="delete-red">supprimer</button></td>
-                </tr>
-                <tr>
-                    <td>Transport</td>
-                    <td class="amount">87,000 FCFA</td>
-                    <td class="actions"><button class="delete-red">supprimer</button></td>
-                </tr>
-            </tbody>
+            <tbody id="revenue-list"></tbody>
             <tfoot>
                 <tr>
-                    <td colspan="3"><i class="fa fa-plus-circle" aria-hidden="true" style="color:#D1C000 ;"></i>
-                        <a href="component/revenues/revenues.html">Ajouter Revenues</a> </td>
-                   
+                    <td colspan="3"><i class="fa fa-plus-circle" aria-hidden="true" style="color:#D1C000;"></i>
+                        <a href="revenues.html">Ajouter Revenus</a>
+                    </td>
                 </tr>
             </tfoot>
         </table>
     </div>
-   
-   
-    
-
     <script src="script.js"></script>
 </body>
 </html>

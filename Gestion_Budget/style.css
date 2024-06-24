@@ -1,115 +1,134 @@
 /* style.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #ffffff;
-    margin: 0px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-    overflow: auto;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  margin: 0px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow: auto;
 }
 
 .container {
-    width: 80%;
-    max-width: 800px;
-    margin-bottom: 20px;
-    /* overflow: auto; */
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 20px;
 }
 
 .logo {
-    text-align: center;
-    margin-top: 100px;
+  justify-content: center;
+  margin-top: 50px;
+  display: flex; /* Utilise un modèle d'affichage flexbox */
+  align-items: center; /* Centre les éléments verticalement */
 }
 
+/* Styles pour l'image du logo */
 .logo img {
-    max-width: 100%;
-    height: auto;
+  margin-right: 10px; /* Marge à droite de l'image pour séparer du lien */
 }
 
+/* Styles pour le lien "Retour à l'accueil" */
+a {
+  text-decoration: none; /* Supprime la décoration de lien */
+  color: #0c5e69; /* Couleur de texte bleu-vert */
+  font-size: 16px; /* Taille de police de 16px */
+}
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
+  display: flex;
+
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20%;
+}
+form label {
+  color: #0c5e69;
+  display: flex;
+
+  flex-direction: column;
 }
 
 input {
-    padding: 10px;
-    font-size: 16px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
 }
 
 button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: red;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  background-color: red;
+  color: #fff;
+  border: none;
+  width: 40%;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .card {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    background-color: white;
-    width: 30%;
-    display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  background-color: white;
+  width: 30%;
+  display: inline-block;
 }
 
 .header {
-    background-color: #0C5E69;
-    color: white;
-    margin-top: 0px;
-    padding: 5px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
+  background-color: #0c5e69;
+  color: white;
+  margin-top: 0px;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .value {
-    text-align: center;
-    font-size: 20px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .nom_table {
-    color: #D1C000;
+  color: #d1c000;
 }
 
-#depenses-table, #revenue-table {
-    justify-content: center;
-    width: 97%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+#depenses-table,
+#revenue-table {
+  justify-content: center;
+  width: 97%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
-#depenses-table th, #depenses-table td, #revenue-table th, #revenue-table td {
-    border: 1px solid gray;
-    padding: 10px;
-    color: black;
-    text-align: left;
+#depenses-table th,
+#depenses-table td,
+#revenue-table th,
+#revenue-table td {
+  border: 1px solid gray;
+  padding: 10px;
+  color: black;
+  text-align: left;
 }
 
-#depenses-table th, #revenue-table th {
-    color: white;
-    background-color: #0C5E69;
+#depenses-table th,
+#revenue-table th {
+  color: white;
+  background-color: #0c5e69;
 }
 
 td.actions {
-    text-align: center;
+  text-align: center;
 }
 
-
-td  a{
-    text-decoration: none;
-    color: #D1C000;
-    padding: 5px;
-    font-weight: bold;
-    font-size:42;
-
+td a {
+  text-decoration: none;
+  color: #d1c000;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 42;
 }
