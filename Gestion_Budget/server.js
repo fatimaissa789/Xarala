@@ -35,21 +35,36 @@ const authorizeRole = (roles) => (req, res, next) => {
 };
 
 // Routes CRUD pour les transactions
-app.post('/transactions', authenticateToken, async (req, res) => { // Création d'une transaction
-  try {
-    const { titre, montant, type } = req.body; // Récupération des données
-    const transaction = new Transaction({ // Création d'une nouvelle transaction
-      titre,
-      montant,
-      type,
-      user: req.user.userId // Association de l'utilisateur
-    });
-    await transaction.save(); // Sauvegarde de la transaction
-    res.status(201).send(transaction); // Réponse avec la transaction créée
-  } catch (err) {
-    res.status(500).send('Server error'); // Gestion des erreurs
-  }
-});
+app.post('/transactions', authenticateToken, async (req, res) => { 
+    try {
+      const { titre, montant, type } = req.body;
+  
+      // Validation des données d'entrée
+      if (!titre || !montant || !type) {
+        return res.status(400).send('Invalid data');
+      }
+  
+      // Assurer que le montant est un nombre
+      if (isNaN(montant)) {
+        return res.status(400).send('Montant must be a number');
+      }
+  
+      const transaction = new Transaction({
+        titre,
+        montant,
+        type,
+        user: req.user.userId 
+      });
+  
+      await transaction.save(); 
+      res.status(201).send(transaction); 
+  
+    } catch (err) {
+      console.error(err); // Log de l'erreur pour le développement
+      res.status(500).send('Server error'); 
+    }
+  });
+  
 
 // Route pour récupérer toutes les transactions
 app.get('/transactions', authenticateToken, async (req, res) => {
